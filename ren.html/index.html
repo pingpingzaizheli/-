@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+
+<head>
+  <mate charset="utf-8">
+    <mate name ="viewport" content="width=device-width,initial-scale=1.0"/>
+    <title>我的第一个网页</title>
+     <script>
+      function displayDate() {
+        document.getElementById("demo").innerHTML = Date();
+      }</script>
+</head>
+<style>
+  div.dier{
+    border:10px dotted rgb(240, 100, 149);
+    padding: 35px;
+    background-clip: content-box;
+    background-image: linear-gradient(rgb(100, 224, 252),rgb(236, 142, 236),rgb(148, 233, 148));
+  }
+  p.yiying{
+    text-shadow: 5px 5px 5px pink;
+  }
+
+  p:first-child i {
+    color: rgb(8, 4, 222);
+  }
+
+  .yanse {
+    background-color: rgb(231, 70, 156);
+
+  }
+  .yingying{text-shadow:5px 5px 5px rgb(251, 4, 45);
+  }
+  .disange{
+    border: 10px groove greenyellow;
+    padding: auto;
+    background-clip: content-box;
+  }
+  @media (min-width:0px)and(max-width:600px) {
+    *{margin:0%;padding:0%;}
+   .div2{display:flex;width:"80%";height:"300px";justify-content:"space-around";}
+.leirong{
+  flex-direction: column;margin: auto;
+}
+    
+  }
+</style>
+
+<body style="
+                
+                            text-align:center;
+                              padding:4px;
+                              background-image: linear-gradient(to right,rgb(237, 156, 169),rgb(140, 140, 237));"
+                            class="leirong">
+
+  <div class="div1 div2">
+    <img alt="熊猫" src="xiongmao.jpg" width="60px" height="60px"><br>吃一口柠檬<br>
+
+  </div>
+  <div style="   
+                   max-width:760px;
+                     margin:30px;
+                      padding:15px;
+                       line-height:1.7;"class="dier div2">
+                       <h1 class="yingying">哈哈~</h1>
+
+    <p>我是<i>大漂亮平平</i>，这是我的个人网页</p>
+    <p>你也很激动来到我的个人网站吧。</p>
+    <p>猜猜现在几点了?</p>
+   
+    <button onclick="displayDate()">点这里</button>
+  </div>
+  <div style="background-color:rgb(242, 168, 242);
+                            text-align: center; 
+                              border:5px solid ,purpie ;
+                      "class="div2">
+    <p id="demo" class="disange">今天吃饱了吗</p>
+  </div> 
+</body>
+
+</html>
