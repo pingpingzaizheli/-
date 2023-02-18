@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+  <mate charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <mate name="viewoort" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
+    <title>我的第一个网页</title>
+    <script>
+      function myfunction() {
+        var x;
+        var d = new Date().getDay();
+        switch (d) {
+          case 0: x = "今天星期日"
+            break;
+          case 1: x = "今天星期一"
+            break;
+          case 2: x = "今天星期二"
+            break;
+          case 3: x = "今天星期三"
+            break;
+          case 4: x = "今天星期四"
+            break;
+          case 5: x = "今天星期五"
+            break;
+          case 6: x = "今天星期六"
+            break;
+        }
+        document.getElementById("demo").innerHTML = x;
+      }</script>
+<style>
+  div.dier {
+    border: 10px dotted rgb(240, 100, 149);
+    padding: 35px;
+    background-clip: content-box;
+    background-clip: padding-box;
+    background-image: linear-gradient(rgb(100, 224, 252), rgb(216, 243, 81), rgb(106, 242, 68));
+  }
+
+  p.yiying {
+    text-shadow: 5px 5px 5px pink;
+  }
+
+  .yanse {
+    background-color: rgb(231, 70, 156);
+
+  }
+
+  .yingying {
+    text-shadow: 5px 5px 5px rgb(251, 4, 45);
+  }
+
+  .disange {
+    border: 10px groove greenyellow;
+    padding: 40px;
+    background-clip: content-box;
+  }
+
+  .disige {
+    border: 5px dashed rgb(205, 10, 182);
+    padding: 40px;
+    background-clip: padding-box;
+  }
+  body{ 
+    text-align:center;
+     padding:4px;
+   background-image: linear-gradient(to right,rgb(237, 156, 169),rgb(140, 140, 237));
+}
+</style>
+</head>
+
+<body style="margin: 0; ">
+                            
+  <div class="disige">
+    <img alt="熊猫" src="xiongmao.jpg" width="80px" height="80px"><br>吃一口柠檬 解解压！<br>
+
+  </div>
+  <div  style=" max-width:760px;
+  margin:30px auto;
+   padding:15px;
+    line-height:1.7;"
+class="dier">
+    <h1 class="yingying">哈哈~</h1>
+
+    <p>我是<b>xxx</b>，这是我的个人网页</p>
+    <p>你也很激动来到我的个人网站吧。</p>
+    <p>你肯定不知道今天星期几了吧↓↓↓↓</p>
+
+    <button onclick="myfunction()">点这里</button>
+  </div>
+  <div style=" text-align: center;
+  padding: 40;
+  font-size: 12px;
+  background-clip: padding-box;
+  background-image: linear-gradient(to right,rgb(240, 132, 132),rgb(222, 153, 240));" class="disange">
+    <p id="demo">今天吃饱了吗</p>
+  </div>
+</body>
+
+</html>
