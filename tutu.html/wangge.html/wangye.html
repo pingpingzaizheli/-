@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网站</title>
+    <style>
+        body{
+            margin: 0;
+            height: 100vh;
+            background-color: rgb(184, 179, 184);    
+        }
+       /* *{
+            border: 1px solid rgb(203, 102, 119);
+        }*/
+        .flex{
+            display:flex;
+        }
+        .baisw{
+            background-color: rgb(248, 250, 251);
+        }
+        .flex1{
+            flex:1
+        }
+        .column{
+            flex-direction: column;
+        }
+        .mg8{
+            margin: 8px;
+        }
+        .mgr8{
+            margin-right: 8px;
+        }
+        .mgt8{
+            margin-top: 8px;
+        }
+        .yingyi{
+            box-shadow: 5px 5px 5px rgb(145, 134, 145);
+        }
+        .daohang{
+            padding: 10px 20px;
+            border-bottom: 1px solid rgb(199, 186, 186);
+            font-size: 14px;
+            color: rgb(12, 12, 12);
+        }
+        @media (max-width:600px) {
+            .ce{
+                display: none;
+            }
+            .neirong{
+                flex-direction: column;
+            }
+            .shuji{
+                flex-direction: column;
+            }
+            .youqu{
+                margin-left: 8px;
+                flex:auto
+            }
+            .shujukuai{
+                margin:0 0 8px；
+            }
+      }
+    </style>
+</head>
+<body class="flex">
+    <!--侧边栏-->
+    <div style="width: 200px;z-index: 2;"class="ce baisw yingyi">
+     <!--头像栏-->
+    <div style="padding: 10px;align-items: center;justify-content: center;bottom: 1px solid rgb(83, 202, 73);"class="flex">
+        <img src="maomao.jpg"alt="maomao" width="40px" height="40px"/></div>
+        <div styly="margin-left:10px">毛毛怪</div>
+    <!--导航栏-->
+    <div class="flex1">
+        <div class="daohang">导航</div>
+        <div class="daohang"> 我的介绍 </div>
+        <div class="daohang">文书迅介绍</div>
+        <div class="daohang">李正翠介绍</div>
+        <div class="daohang">杜金城介绍</div>
+    </div>
+    </div>
+    <!--主区域-->
+    <div class="flex1 flex column">
+        <!--头部栏-->
+        <div style="height: 60px;z-index: 1;"class="baisw yingyi">我的网页</div>
+        <!--内容区-->
+        <div style="overflow:auto" class="neirong flex1 flex">
+            <!--左区-->
+            <div style="flex:3;"class="flex column mg8">
+                <!--数据区-->
+                <div class="flex shuju">
+                    <!--数据块-->
+                    <div style="height:100px;"class="shujukuai flex1 baisw mgr8 yingyi">1</div>
+                     <!--数据块-->
+                     <div style="height:100px;"class="shujukuai flex1 baisw mgr8 yingyi">2</div>
+                      <!--数据块-->
+                     <div style="height:100px;"class="shujukuai flex1 baisw mgr8 yingyi">3</div>
+                     <!--数据块-->
+                     <div style="height:100px;"class="shujukuai flex1 baisw mgr8 yingyi">4</div>
+                </div>
+                <!--列表区-->
+                <div class="flex column">
+                    <!--列表项-->
+                    <div style="height:160px;"class="baisw mgt8 yingyi">我是大漂亮平平，在龙河中学就读高三，前几天早上因为去学校迟了被老师说了，他问我为什么会迟到，哎~我也不是故意赖在床上不起的，我是被自己美晕的起不来，真的拿自己的美貌没办法</div>
+                    <div style="height:160px;"class="baisw mgt8 yingyi">
+                    文书迅我的好朋友，一天能拉三次以上的粑粑，屎量非常的惊人！关键是她怎么吃都不胖，一整个贤母住了。众所周知，现在中国人的颜值是靠四个人撑起来的，鞠婧祎，迪丽热巴，古力拉扎，还有文书迅</div>
+                    <div style="height:160px;"class="baisw mgt8 yingyi">
+                    李正翠也是我的好朋友之一，她最近对人体结构学感兴趣还偷偷摸摸的看小书，虽然他不告诉我和文书迅，但是以我俩聪明的大脑，福尔摩斯般的侦查能力，一下就猜出来了，她最近……（嘿嘿嘿嘿~）</div>
+                    <div style="height:160px;"class="baisw mgt8 yingyi">
+                    杜金城，一个喜欢看大胸美眉的人，就连上课也要刷美女视频，太不认真了！另外他还喜欢唱歌，非常的投入自我，目无旁人的那种。我都不敢站旁边恭维，太震撼了！</div>
+                    <div style="height:160px;"class="baisw mgt8 yingyi">6</div>
+                </div>
+            </div>
+            <!--右区-->
+            <div style="flex:1;"class="youqu flex column mgr8 mgt8">
+                <!--提示区-->
+                 <div style="height:150px;"class="baisw yingyi">提示</div>
+                <!--消息区-->
+                <div style="height:300px"class="baisw mgt8 yingyi">消息</div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
